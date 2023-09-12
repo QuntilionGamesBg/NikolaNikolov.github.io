@@ -304,10 +304,6 @@ body.dark .switch::before{
 body.dark .home .text{
     color: var(--text-color);
 }
-section{
-  width: 100vw;
-  height: 200vh;
-}
 .info{
 display: flex;
 flex-direction: column;
@@ -1926,7 +1922,7 @@ transition: var(--tran-05);
   transform: translate(-50%, -50%) scale(0);
   background: #fff;
   width: 450px;
-  height: 650px;
+  height: 600px;
   z-index: 101;
   text-align: center;
   padding: 20px;
@@ -1954,4 +1950,23 @@ transition: var(--tran-05);
 .popup.active .content{
   transition: all 300ms ease-in-out;
   transform: translate(-50%, -50%) scale(1);
+}
+.popup .content .feed .container .btn-join a button{
+  position: absolute;
+  width: 300px;
+  top: 98%;
+  left: 22%;
+  display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ gap: 8px;
+ position: absolute;
+ width: 300px;
+ height: 30px;
+ background: var(--primary-color);
+ color: #fff;
+ border: 1px solid var(--primary-color-light);
+ border-radius: 32px;
+ box-sizing: border-box;
 }
